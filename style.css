@@ -1,0 +1,54 @@
+:root {
+  --colorMain: #050505;
+  --colorMainText: #fff;
+  --colorAccent: #ff9d41;
+}
+*,
+div {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.accent-color {
+  background-color: var(--colorAccent) !important;
+  color: #ececec;
+}
+.grid-span-2 {
+  grid-column-start: span 2;
+  border-radius: 50px !important;
+  width: 140px;
+}
+
+.container {
+  margin: 150px auto;
+  height: 500px;
+  width: 350px;
+  background-color: var(--colorMain);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.calculation {
+  height: 150px;
+  color: #fff;
+}
+.keys {
+  display: grid;
+  padding: 20px 15px;
+  grid-template-columns: repeat(4, auto);
+  gap: 15px;
+  justify-items: center;
+  grid-auto-flow: row;
+}
+
+.key {
+  min-height: 60px;
+  min-width: 60px;
+  background-color: #ececec;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
